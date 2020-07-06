@@ -1,11 +1,13 @@
 Data download link: https://www.kaggle.com/c/bengaliai-cv19/data
 
 **train.csv**
-image_id: the foreign key for the parquet files
+
+```image_id```: the foreign key for the parquet files
 grapheme_root: the first of the three target classes
 vowel_diacritic: the second target class
 consonant_diacritic: the third target class
 grapheme: the complete character. Provided for informational purposes only, you should not need to use this.
+
 
 **test.csv**
 Every image in the test set will require three rows of predictions, one for each component. This csv specifies the exact order for you to provide your labels. - row_id: foreign key to the sample submission - image_id: foreign key to the parquet file - component: the required target class for the row (grapheme_root, vowel_diacritic, or consonant_diacritic)
