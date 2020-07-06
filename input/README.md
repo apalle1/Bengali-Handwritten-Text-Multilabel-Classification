@@ -10,11 +10,14 @@ Data download link: https://www.kaggle.com/c/bengaliai-cv19/data
 
 
 **test.csv**
+
 Every image in the test set will require three rows of predictions, one for each component. This csv specifies the exact order for you to provide your labels. - ```row_id```: foreign key to the sample submission - ```image_id```: foreign key to the parquet file - ```component```: the required target class for the row (grapheme_root, vowel_diacritic, or consonant_diacritic)
 
 **sample_submission.csv**
+
 ```row_id```: foreign key to ```test.csv``` <br />
 ```target```: the target column <br />
 
 **(train/test).parquet**
+
 Each parquet file contains tens of thousands of 137x236 grayscale images. The images have been provided in the parquet format for I/O and space efficiency. Each row in the parquet files contains an ```image_id``` column, and the flattened image.
