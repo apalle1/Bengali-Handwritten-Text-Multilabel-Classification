@@ -2,7 +2,7 @@ Data download link: https://www.kaggle.com/c/bengaliai-cv19/data
 
 **train.csv**
 
-```image_id```: the foreign key for the parquet files
+```image_id```: the foreign key for the parquet files <br />
 grapheme_root: the first of the three target classes
 vowel_diacritic: the second target class
 consonant_diacritic: the third target class
